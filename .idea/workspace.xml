@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/relatorio.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/output/relatorio.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/read_dis_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/read_dis_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/read_icms_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/read_icms_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Teste@Run_spec__my_test_spec___Teste.rcov" NAME="Run spec 'my_test_spec': Teste Coverage Results" MODIFIED="1530304256687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@IRB_console__Teste.rcov" NAME="IRB console: Teste Coverage Results" MODIFIED="1530304414012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
-    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_dis_spec___Teste.rcov" NAME="Run spec 'read_dis_spec': Teste Coverage Results" MODIFIED="1530563221766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
+    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_dis_spec___Teste.rcov" NAME="Run spec 'read_dis_spec': Teste Coverage Results" MODIFIED="1530568297155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__read_icms_spec___Teste.rcov" NAME="Run spec 'read_icms_spec': Teste Coverage Results" MODIFIED="1530559387157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__my_example_spec___Teste.rcov" NAME="Run spec 'my_example_spec': Teste Coverage Results" MODIFIED="1530536023687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
   </component>
@@ -27,17 +25,8 @@
       <file leaf-file-name="read_dis_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consultaDI201807021415.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dis/consultaDI201807021415.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="906" column="16" selection-start-line="906" selection-start-column="13" selection-end-line="906" selection-end-column="16" />
+            <state relative-caret-position="294">
+              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -55,13 +44,19 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>icms</find>
       <find>numeroDi</find>
       <find>numeroDI</find>
       <find>cpf</find>
+      <find>icms</find>
+      <find>adicao</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Felipe Rodrigues Michetti &lt;frmichetti@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -87,8 +82,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="366" />
-    <option name="y" value="-9" />
+    <option name="x" value="88" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -326,60 +321,71 @@
       <workItem from="1530535224582" duration="53000" />
       <workItem from="1530535334384" duration="1175000" />
       <workItem from="1530555816399" duration="6443000" />
-      <workItem from="1530562286374" duration="987000" />
+      <workItem from="1530562286374" duration="1408000" />
+      <workItem from="1530564293605" duration="1431000" />
+      <workItem from="1530565865668" duration="2862000" />
     </task>
+    <task id="LOCAL-00001" summary="Implementing Reports.">
+      <created>1530563320235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530563320235</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 09m 07s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 53m 46s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 09m 31s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 02m 45s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 10m 49s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 06m 48s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 11m 14s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 06m 57s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 13m 18s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 07m 08s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 16m 35s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 08m 41s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 16m 39s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 26m 46s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 17m 23s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 27m 35s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 25m 14s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 33m 17s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 17h 27m 02s.xml">
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.02 at 18h 49m 58s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23805000" />
+    <option name="totallyTimeSpent" value="28519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23347548" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23614073" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32834226" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.2973262" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38609627" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -394,7 +400,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32834226" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23347548" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23614073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -403,8 +409,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27807486" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38609627" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -416,6 +422,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementing Reports." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing Reports." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -426,72 +436,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>49</line>
-          <option name="timeStamp" value="60" />
+          <line>108</line>
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>54</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>59</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>64</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>69</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>74</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>80</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>85</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>88</line>
-          <option name="timeStamp" value="70" />
+          <line>153</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="71" />
+      <option name="time" value="89" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>numeros_di_info = numeros_di_info.uniq</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>numeros_di_info = numeros_di_info.uniq.collect{|info|
+  info.at_css('numeroDI')
+}</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>icms</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>numero</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>numero_icms</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>info.content</expression-string>
+        <expression-string>di_info.count</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -501,33 +475,68 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>di_info.at_css('numero')</expression-string>
+        <expression-string>icms_info.count</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>di_info.at_css('numeroDi')</expression-string>
+        <expression-string>icms_info</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>di_info.content</expression-string>
+        <expression-string>adicao_info.uniq</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>numero_di</expression-string>
+        <expression-string>adicao_info</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>info.at_css('numeroDI')</expression-string>
+        <expression-string>numero_di_info</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>numero_di_info.each{|k| puts k}</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>numero_di_info.each{|k| puts kind_of?}</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dis/consultaDI201807021415.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15402">
+          <caret line="906" column="16" selection-start-line="906" selection-start-column="13" selection-end-line="906" selection-end-column="16" />
+          <folding>
+            <element signature="e#110#15127#0" />
+            <element signature="e#15136#27237#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
@@ -675,24 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/read_files.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xml/1419362714.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="882" column="21" selection-start-line="882" selection-start-column="13" selection-end-line="882" selection-end-column="21" />
-          <folding>
-            <element signature="e#110#10838#0" />
-            <element signature="e#10847#21665#0" />
-            <element signature="e#21674#33260#0" />
-            <element signature="e#33269#44096#0" />
-            <element signature="e#44105#55374#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,17 +698,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/axlsx-2.0.1/lib/axlsx/util/validators.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/read_files.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dis/consultaDI201807021415.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="906" column="16" selection-start-line="906" selection-start-column="13" selection-end-line="906" selection-end-column="16" />
+        <state relative-caret-position="339">
+          <caret line="2593" column="25" selection-start-line="2593" selection-start-column="25" selection-end-line="2593" selection-end-column="25" />
+          <folding>
+            <element signature="e#110#15127#0" />
+            <element signature="e#15136#27237#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="294">
+          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
         </state>
       </provider>
     </entry>

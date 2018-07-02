@@ -9,7 +9,7 @@ require 'requires'
 describe 'Read XML and Parse to XLS' do
 
   files = []
-  icms_array = []
+  di_array = []
 
   before do
     extend ReadFiles
@@ -26,69 +26,87 @@ describe 'Read XML and Parse to XLS' do
       end
 
       di_info = doc.xpath("//declaracaoImportacao")
+      adicoes_info = doc.xpath("//adicao")
       icms_info = doc.xpath("//icms")
+      numeros_di_info = doc.xpath("//numeroDI")
+      numeros_li_info = doc.xpath("//numeroLI")
 
-      icms_out = {}
       di_out = {}
+      adicao_out = {}
+      icms_out = {}
 
-      icms_info.each {|info|}
+      numeros_di_info = numeros_di_info.uniq.each{|info|
+        puts info
+      }
+
+      numeros_li_info = numeros_li_info.uniq.each{|info|
+        puts info
+      }
+
+      adicoes_info = adicoes_info.uniq.each{|info|
+        puts info
+      }
+
+      icms_info.each {|info|
+        puts info
+      }
 
       di_info.each {|info|
 
         # Numero DI
         numero_di = info.at_css('numeroDI')
         expect(numero_di).not_to be_nil
-        icms_out[:numero_di] = numero_di || '-'
+        di_out[:numero_di] = numero_di || '-'
 
         # ICMS-Banco
         banco_icms = info.at_css('bancoIcms')
         expect(banco_icms).not_to be_nil
-        icms_out[:banco_icms] = banco_icms || '-'
+        di_out[:banco_icms] = banco_icms || '-'
 
         # ICMS-cod.tipo recolhimento
         codigo_tipo_recolhimento_icms = info.at_css('codigoTipoRecolhimentoIcms')
         expect(codigo_tipo_recolhimento_icms).not_to be_nil
-        icms_out[:codigo_tipo_recolhimento_icms] = codigo_tipo_recolhimento_icms || '-'
+        di_out[:codigo_tipo_recolhimento_icms] = codigo_tipo_recolhimento_icms || '-'
 
         # ICMS-cpf responsavel registro
         cpf_responsavel_registro = info.at_css('cpfResponsavelRegistro')
         expect(cpf_responsavel_registro).not_to be_nil
-        icms_out[:cpf_responsavel_registro] = cpf_responsavel_registro || '-'
+        di_out[:cpf_responsavel_registro] = cpf_responsavel_registro || '-'
 
         # ICMS-data pagamento
         data_registro = info.at_css('dataRegistro')
         expect(data_registro).not_to be_nil
-        icms_out[:data_registro] = data_registro || '-'
+        di_out[:data_registro] = data_registro || '-'
 
         # ICMS-data registro
         hora_registro = info.at_css('horaRegistro')
         expect(hora_registro).not_to be_nil
-        icms_out[:hora_registro] = hora_registro || '-'
+        di_out[:hora_registro] = hora_registro || '-'
 
         # ICMS-nome tipo recolhimento
         nome_tipo_recolhimento_icms = info.at_css('nomeTipoRecolhimentoIcms')
         expect(nome_tipo_recolhimento_icms).not_to be_nil
-        icms_out[:nome_tipo_recolhimento_icms] = nome_tipo_recolhimento_icms || '-'
+        di_out[:nome_tipo_recolhimento_icms] = nome_tipo_recolhimento_icms || '-'
 
         # ICMS-numero sequencial
         numero_sequencial_icms = info.at_css('numeroSequencialIcms')
         expect(numero_sequencial_icms).not_to be_nil
-        icms_out[:numero_sequencial_icms] = numero_sequencial_icms || '-'
+        di_out[:numero_sequencial_icms] = numero_sequencial_icms || '-'
 
 
         # ICMS-Unidade Federação
         uf_icms = info.at_css('ufIcms')
         expect(uf_icms).not_to be_nil
-        icms_out[:uf_icms] = uf_icms || '-'
+        di_out[:uf_icms] = uf_icms || '-'
 
         # ICMS-valor total
         valor_total_icms = info.at_css('valorTotalIcms')
         expect(valor_total_icms).not_to be_nil
-        icms_out[:valor_total_icms] = valor_total_icms || '-'
+        di_out[:valor_total_icms] = valor_total_icms || '-'
 
         puts info
 
-        icms_array << icms_out
+        di_array << di_out
 
       }
     end
@@ -131,7 +149,7 @@ describe 'Read XML and Parse to XLS' do
         ws.add_row rows, :style => header
 
         # Passing one style applies the style to all columns
-        icms_array.each{|row|
+        di_array.each{|row|
 
           contents = row.collect{|_k,v| v.content}
           ws.add_row contents , :style => pascal
