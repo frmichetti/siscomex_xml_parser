@@ -6,7 +6,7 @@ require_relative '../lib/loadpath'
 require 'requires'
 
 
-describe 'My behaviour' do
+describe 'Read XML and Parse to XLS' do
 
   files = []
   icms_array = []
@@ -14,7 +14,7 @@ describe 'My behaviour' do
   before do
     extend ReadFiles
 
-    files = discover_xml_files
+    files = discover_di_files
   end
 
   it 'parse_xml_file' do
@@ -25,7 +25,7 @@ describe 'My behaviour' do
         config.options = opts
       end
 
-      icms_info = doc.xpath("//icms")
+      icms_info = doc.xpath("//declaracaoImportacao")
 
       icms_info.each {|info|
 
