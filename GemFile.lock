@@ -1,0 +1,59 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    axlsx (2.0.1)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.0.0)
+    commander (4.1.6)
+      highline (~> 1.6.11)
+    diff-lcs (1.3)
+    highline (1.6.21)
+    htmlentities (4.3.4)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.3-x64-mingw32)
+      mini_portile2 (~> 2.3.0)
+    rake (12.3.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.1)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.1)
+    ruby-debug-ide (0.7.0.beta4)
+      rake (>= 0.8.1)
+    ruby-ole (1.2.12.1)
+    ruby-progressbar (1.0.2)
+    rubyzip (1.0.0)
+    spreadsheet (0.7.9)
+      ruby-ole (>= 1.0)
+    unindentable (0.1.0)
+    xls (0.1.2)
+      commander (~> 4.1.3)
+      ruby-progressbar (~> 1.0.2)
+      spreadsheet (~> 0.7.6)
+      unindentable (~> 0.1.0)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  axlsx
+  nokogiri
+  rspec
+  ruby-debug-ide
+  spreadsheet
+  xls
+
+RUBY VERSION
+   ruby 2.5.1p57
+
+BUNDLED WITH
+   1.16.2

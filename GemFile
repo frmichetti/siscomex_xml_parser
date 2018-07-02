@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+ruby '2.5.1'
+
+gem 'axlsx'
+gem 'nokogiri'
+gem 'xls'
+gem 'ruby-debug-ide'
+
+group :test do
+  gem 'rspec'
+end
