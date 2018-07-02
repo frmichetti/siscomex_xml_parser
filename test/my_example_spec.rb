@@ -17,17 +17,6 @@ describe 'My behaviour' do
     files = discover_xml_files
   end
 
-  # it 'load_xml_files' do
-  #   extend ReadFiles
-  #   files = discover_xml_files
-  #   # expect{files}.not_to be_nil
-  # end
-
-  it 'should do something' do
-    expect {true}.to be_truthy
-  end
-
-
   it 'parse_xml_file' do
     opts = Nokogiri::XML::ParseOptions::STRICT | Nokogiri::XML::ParseOptions::NOBLANKS
 
@@ -133,7 +122,7 @@ describe 'My behaviour' do
         ws.add_row ['ICMS'], :style => title
         ws.add_row
 
-        rows = %w(ICMS-Agencia ICMS-Banco ICMS-Cod-Tipo-Recolhimento ICMS-Cpf-Responsavel ICMS-Registro ICMS-Data-Pagamento ICMS-Data-Registro ICMS-Nome-Tipo-Recolhimento ICMS-Numero-Sequencial ICMS-Unidade-Federação ICMS-Valor-Total ICMS-Agencia)
+        rows = %w(AgenciaIcms BancoIcms CodigoTipoRecolhimentoIcms CpfResponsavelRegistro DataRegistro HoraRegistro NomeTipoRecolhimentoIcms NumeroSequencialIcms UFIcms ValorTotalIcms)
 
         ws.add_row rows, :style => header
 
