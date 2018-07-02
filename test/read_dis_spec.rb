@@ -35,23 +35,19 @@ describe 'Read XML and Parse to XLS' do
       adicao_out = {}
       icms_out = {}
 
-      numeros_di_info = numeros_di_info.uniq.each{|info|
-        puts info
-      }
+      numeros_di_info = numeros_di_info.uniq
+      puts numeros_di_info
 
-      numeros_li_info = numeros_li_info.uniq.each{|info|
-        puts info
-      }
+      numeros_li_info = numeros_li_info.uniq
+      puts numeros_li_info
 
-      adicoes_info = adicoes_info.uniq.each{|info|
-        puts info
-      }
+      adicoes_info = adicoes_info.uniq
+      puts adicoes_info
 
-      icms_info.each {|info|
-        puts info
-      }
+      icms_info = icms_info.uniq
+      puts icms_info
 
-      di_info.each {|info|
+      di_info.uniq.each {|info|
 
         # Numero DI
         numero_di = info.at_css('numeroDI')
@@ -104,11 +100,11 @@ describe 'Read XML and Parse to XLS' do
         expect(valor_total_icms).not_to be_nil
         di_out[:valor_total_icms] = valor_total_icms || '-'
 
-        puts info
+        # puts info
 
         di_array << di_out
-
       }
+      di_array
     end
   end
 
