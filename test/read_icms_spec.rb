@@ -40,9 +40,6 @@ describe 'Read XML and Parse to XLS' do
       }
       icms_info.each {|info|
 
-
-
-
         # ICMS-Agencia
         agencia_icms = info.at_css('agenciaIcms')
         expect(agencia_icms).not_to be_nil
@@ -134,7 +131,6 @@ describe 'Read XML and Parse to XLS' do
         ws.add_row ['ICMS'], :style => title
         ws.add_row
 
-        # rows = %w(AgenciaIcms BancoIcms CodigoTipoRecolhimentoIcms CpfResponsavelRegistro DataRegistro HoraRegistro NomeTipoRecolhimentoIcms NumeroSequencialIcms UFIcms ValorTotalIcms)
         rows = %w(NumeroDI AgenciaIcms BancoIcms CodigoTipoRecolhimentoIcms CpfResponsavelRegistro DataRegistro HoraRegistro NomeTipoRecolhimentoIcms NumeroSequencialIcms UFIcms ValorTotalIcms)
 
         ws.add_row rows, :style => header
