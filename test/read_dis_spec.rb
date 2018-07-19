@@ -75,6 +75,7 @@ describe 'Read XML and Parse to XLS' do
         # ICMS-hora registro
         hora_registro = info.at_css('horaRegistro')
         expect(hora_registro).not_to be_nil
+        hora_registro.content = "#{hora_registro.content[0..1]}:#{hora_registro.content[2..3]}:#{hora_registro.content[4..5]}"
         di_out[:hora_registro] = hora_registro
         puts hora_registro
 
