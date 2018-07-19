@@ -67,10 +67,11 @@ describe 'Read XML and Parse to XLS' do
         # ICMS-data pagamento
         data_registro = info.at_css('dataRegistro')
         expect(data_registro).not_to be_nil
+        data_registro.content = "#{data_registro.content[6..7]}/#{data_registro.content[4..5]}/#{data_registro.content[0..3]}"
         di_out[:data_registro] = data_registro
         puts data_registro
 
-        # ICMS-data registro
+        # ICMS-hora registro
         hora_registro = info.at_css('horaRegistro')
         expect(hora_registro).not_to be_nil
         di_out[:hora_registro] = hora_registro
