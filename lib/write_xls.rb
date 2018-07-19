@@ -6,7 +6,7 @@ module WriteXLS
   end
 
 
-  def save_xls_file_report(di_array)
+  def save_xls_file_report(di_array, name = nil)
 
     # First, if you plan to use the generated file with Numbers, make sure to set “use_shared_strings” to true.
 
@@ -43,7 +43,6 @@ module WriteXLS
 
         # Passing one style applies the style to all columns
         di_array.each do |row|
-
           contents = row.collect {|_k, v| v.content}
           ws.add_row contents, :style => pascal
         end
@@ -54,7 +53,13 @@ module WriteXLS
     date_time = DateTime.now.to_s
     date_time.gsub!(":", '-')
 
-    p.serialize "../output/relatorio.dis.#{date_time}.xlsx"
+    unless di_array.empty?
+      if name.nil? then
+        p.serialize "../output/relatorio.dis.#{date_time}.xlsx"
+      else
+        p.serialize name
+      end
+    end
   end
 
 end

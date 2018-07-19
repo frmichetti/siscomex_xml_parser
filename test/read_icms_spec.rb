@@ -21,6 +21,7 @@ describe 'Read XML and Parse to XLS' do
     opts = Nokogiri::XML::ParseOptions::STRICT | Nokogiri::XML::ParseOptions::NOBLANKS
 
     files.each do |f|
+      puts "IN file #{f.path}"
       doc = Nokogiri::XML(f, nil, 'UTF-8') do |config|
         config.options = opts
       end
@@ -30,7 +31,7 @@ describe 'Read XML and Parse to XLS' do
 
       icms_out = {}
 
-      di_info.each{|info|
+      di_info.each {|info|
 
         # Declaracao de Importação
         numero_di = info
@@ -137,15 +138,18 @@ describe 'Read XML and Parse to XLS' do
         ws.add_row rows, :style => header
 
         # Passing one style applies the style to all columns
-        icms_array.each{|row|
+        icms_array.each {|row|
 
-          contents = row.collect{|_k,v| v.content}
-          ws.add_row contents , :style => pascal
+          contents = row.collect {|_k, v| v.content}
+          ws.add_row contents, :style => pascal
         }
 
       end
     end
 
-      p.serialize '../output/relatorio.xlsx'
+    date_time = DateTime.now.to_s
+    date_time.gsub!(":", '-')
+
+    p.serialize "../output/relatorio.icms.#{date_time}.xlsx"
   end
 end

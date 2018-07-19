@@ -21,6 +21,7 @@ describe 'Read XML and Parse to XLS' do
     opts = Nokogiri::XML::ParseOptions::STRICT | Nokogiri::XML::ParseOptions::NOBLANKS
 
     files.each do |f|
+      puts "IN file #{f.path}"
       doc = Nokogiri::XML(f, nil, 'UTF-8') do |config|
         config.options = opts
       end
