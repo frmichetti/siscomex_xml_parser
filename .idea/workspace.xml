@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="" />
+    <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fetch_di_spec.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/fetch_di_spec.rb">
+      <file leaf-file-name="ListaDeclaracoes.xsd" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="2465">
+              <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -138,6 +140,7 @@
         <option value="$PROJECT_DIR$/test/read_icms_spec.rb" />
         <option value="$PROJECT_DIR$/lib/write_xls.rb" />
         <option value="$PROJECT_DIR$/test/fetch_di_spec.rb" />
+        <option value="$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd" />
       </list>
     </option>
   </component>
@@ -199,6 +202,11 @@
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Teste" type="462c0819:PsiDirectoryNode" />
+              <item name="xsd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -404,7 +412,7 @@
       <workItem from="1531646161341" duration="824000" />
       <workItem from="1531743399090" duration="3082000" />
       <workItem from="1531999860400" duration="11129000" />
-      <workItem from="1532215137860" duration="566000" />
+      <workItem from="1532215137860" duration="1767000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing Reports.">
       <created>1530563320235</created>
@@ -417,9 +425,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'fetch_di_spec'__Teste - 2018.07.19 at 11h 42m 55s.xml">
-      <configuration name="Run spec 'fetch_di_spec': Teste" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_spec_'fetch_di_spec'__Teste - 2018.07.19 at 11h 43m 16s.xml">
       <configuration name="Run spec 'fetch_di_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -447,9 +452,12 @@
     <history-entry file="Run_spec_'fetch_di_spec'__Teste - 2018.07.21 at 20h 26m 36s.xml">
       <configuration name="Run spec 'fetch_di_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_spec_'fetch_di_spec'__Teste - 2018.07.21 at 20h 29m 56s.xml">
+      <configuration name="Run spec 'fetch_di_spec': Teste" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61806000" />
+    <option name="totallyTimeSpent" value="63007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,8 +470,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2196162" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.2196162" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -489,7 +498,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32834226" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.2196162" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2196162" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
@@ -497,8 +506,8 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37326202" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37326202" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -893,8 +902,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/fetch_di_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        <state relative-caret-position="697">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2465">
+          <caret line="145" column="63" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
         </state>
       </provider>
     </entry>

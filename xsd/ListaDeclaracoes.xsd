@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-         <!-- XML Schema Generated from XML Document on Sat Jul 21 2018 20:36:05 GMT-0300 (Horário Padrão de Brasília) -->
+         <!-- XML Schema Generated from XML Document on Sat Jul 21 2018 20:37:07 GMT-0300 (Horário Padrão de Brasília) -->
          <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
          <xs:element name="ListaDeclaracoes">
                <xs:complexType>
                      <xs:sequence>
-                           <xs:element name="declaracaoImportacao" maxOccurs="unbounded">
+                           <xs:element name="declaracaoImportacao">
                                  <xs:complexType>
                                        <xs:sequence>
-                                             <xs:element name="adicao" maxOccurs="unbounded">
+                                             <xs:element name="adicao">
                                                    <xs:complexType>
                                                          <xs:sequence>
                                                                <xs:element name="cideValorAliquotaEspecifica" type="xs:int"></xs:element>
@@ -63,13 +63,13 @@
                                                                      </xs:complexType>
                                                                </xs:element>
                                                                <xs:element name="fabricanteCidade" type="xs:string"></xs:element>
-                                                               <xs:element name="fabricanteComplemento" type="xs:string"></xs:element>
                                                                <xs:element name="fabricanteEstado" type="xs:string"></xs:element>
                                                                <xs:element name="fabricanteLogradouro" type="xs:string"></xs:element>
                                                                <xs:element name="fabricanteNome" type="xs:string"></xs:element>
-                                                               <xs:element name="fabricanteNumero" type="xs:int"></xs:element>
+                                                               <xs:element name="fabricanteNumero" type="xs:string"></xs:element>
                                                                <xs:element name="fornecedorCidade" type="xs:string"></xs:element>
                                                                <xs:element name="fornecedorComplemento" type="xs:string"></xs:element>
+                                                               <xs:element name="fornecedorEstado" type="xs:string"></xs:element>
                                                                <xs:element name="fornecedorLogradouro" type="xs:string"></xs:element>
                                                                <xs:element name="fornecedorNome" type="xs:string"></xs:element>
                                                                <xs:element name="fornecedorNumero" type="xs:int"></xs:element>
@@ -86,11 +86,6 @@
                                                                <xs:element name="iiAliquotaValorRecolher" type="xs:int"></xs:element>
                                                                <xs:element name="iiAliquotaValorReduzido" type="xs:int"></xs:element>
                                                                <xs:element name="iiBaseCalculo" type="xs:int"></xs:element>
-                                                               <xs:element name="iiExTarifarioAtoLegalAno" type="xs:int"></xs:element>
-                                                               <xs:element name="iiExTarifarioAtoLegalCodigo" type="xs:string"></xs:element>
-                                                               <xs:element name="iiExTarifarioAtoLegalEX" type="xs:int"></xs:element>
-                                                               <xs:element name="iiExTarifarioAtoLegalNumero" type="xs:int"></xs:element>
-                                                               <xs:element name="iiExTarifarioAtoLegalOrgaoEmissor" type="xs:string"></xs:element>
                                                                <xs:element name="iiFundamentoLegalCodigo" type="xs:int"></xs:element>
                                                                <xs:element name="iiMotivoAdmissaoTemporariaCodigo" type="xs:int"></xs:element>
                                                                <xs:element name="iiRegimeTributacaoCodigo" type="xs:int"></xs:element>
@@ -106,7 +101,7 @@
                                                                <xs:element name="ipiAliquotaValorRecolher" type="xs:int"></xs:element>
                                                                <xs:element name="ipiRegimeTributacaoCodigo" type="xs:int"></xs:element>
                                                                <xs:element name="ipiRegimeTributacaoNome" type="xs:string"></xs:element>
-                                                               <xs:element name="mercadoria" maxOccurs="unbounded">
+                                                               <xs:element name="mercadoria">
                                                                      <xs:complexType>
                                                                            <xs:sequence>
                                                                                  <xs:element name="descricaoMercadoria" type="xs:string"></xs:element>
@@ -114,6 +109,15 @@
                                                                                  <xs:element name="quantidade" type="xs:int"></xs:element>
                                                                                  <xs:element name="unidadeMedida" type="xs:string"></xs:element>
                                                                                  <xs:element name="valorUnitario" type="xs:int"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="nomenclaturaValorAduaneiro" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="atributo" type="xs:string"></xs:element>
+                                                                                 <xs:element name="especificacao" type="xs:int"></xs:element>
+                                                                                 <xs:element name="nivelNome" type="xs:string"></xs:element>
                                                                            </xs:sequence>
                                                                      </xs:complexType>
                                                                </xs:element>
@@ -187,6 +191,16 @@
                                                          </xs:sequence>
                                                    </xs:complexType>
                                              </xs:element>
+                                             <xs:element name="dossie">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="dossieDataVinculacao" type="xs:int"></xs:element>
+                                                               <xs:element name="dossieHoraVinculacao" type="xs:int"></xs:element>
+                                                               <xs:element name="dossieNumero" type="xs:int"></xs:element>
+                                                               <xs:element name="indicadorDossieVazio" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
                                              <xs:element name="embalagem">
                                                    <xs:complexType>
                                                          <xs:sequence>
@@ -211,6 +225,7 @@
                                                                <xs:element name="bancoIcms" type="xs:int"></xs:element>
                                                                <xs:element name="codigoTipoRecolhimentoIcms" type="xs:int"></xs:element>
                                                                <xs:element name="cpfResponsavelRegistro" type="xs:int"></xs:element>
+                                                               <xs:element name="dataPagamentoIcms" type="xs:int"></xs:element>
                                                                <xs:element name="dataRegistro" type="xs:int"></xs:element>
                                                                <xs:element name="horaRegistro" type="xs:int"></xs:element>
                                                                <xs:element name="nomeTipoRecolhimentoIcms" type="xs:string"></xs:element>
@@ -271,6 +286,7 @@
                                              <xs:element name="totalAdicoes" type="xs:int"></xs:element>
                                              <xs:element name="urfDespachoCodigo" type="xs:int"></xs:element>
                                              <xs:element name="urfDespachoNome" type="xs:string"></xs:element>
+                                             <xs:element name="valorTotalMultaARecolher" type="xs:int"></xs:element>
                                              <xs:element name="valorTotalMultaARecolherAjustado" type="xs:int"></xs:element>
                                              <xs:element name="viaTransporteCodigo" type="xs:int"></xs:element>
                                              <xs:element name="viaTransporteMultimodal" type="xs:string"></xs:element>
