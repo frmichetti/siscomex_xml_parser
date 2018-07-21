@@ -36,9 +36,15 @@ describe 'Read a XML and Fetch for DI' do
         # Numero DI
         numero_di = info.at_css('numeroDI')
         expect(numero_di).not_to be_nil
-        puts 'FOUND DI ' +  numero_di
+        puts 'FOUND DI ' + numero_di
+      end
 
-        if numero_di.content == di_number
+      di_info.each do |info|
+
+        # Numero DI
+        numero_di = info.at_css('numeroDI')
+
+        if numero_di.content === di_number
           puts 'LOOKUP FOR DI == ' + di_number
           looking_for_di = info
           # puts looking_for_di
