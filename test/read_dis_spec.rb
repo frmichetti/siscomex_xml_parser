@@ -39,6 +39,13 @@ describe 'Read XML and Parse to XLS' do
         expect(numero_di).not_to be_nil
         puts numero_di
 
+        # Importador Nº
+        numero_importador = info.at_css('importadorNumero')
+        di_out[:numero_importador] = numero_importador
+        numero_importador.content = "#{numero_importador.content[0..1]}.#{numero_importador.content[2..4]}.#{numero_importador.content[5..7]}/#{numero_importador.content[8..11]}-#{numero_importador.content[12..13]}"
+        expect(numero_importador).not_to be_nil
+        puts numero_importador
+
         # ICMS
         icms_info = info.at_css('icms')
 

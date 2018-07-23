@@ -37,7 +37,7 @@ module WriteXLS
         ws.add_row ['ICMS'], :style => title
         ws.add_row
 
-        rows = %w(NumeroDI AgenciaIcms BancoIcms CodigoTipoRecolhimentoIcms CpfResponsavelRegistro DataRegistro HoraRegistro NomeTipoRecolhimentoICMS NumeroSequencialICMS UFICMS ValorTotalICMS)
+        rows = %w(NumeroDI NumeroImportador AgenciaIcms BancoIcms CodigoTipoRecolhimentoIcms CpfResponsavelRegistro DataRegistro HoraRegistro NomeTipoRecolhimentoICMS NumeroSequencialICMS UFICMS ValorTotalICMS)
 
         ws.add_row rows, :style => header
 
