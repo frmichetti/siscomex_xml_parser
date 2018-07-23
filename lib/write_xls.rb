@@ -43,7 +43,7 @@ module WriteXLS
 
         # Passing one style applies the style to all columns
         di_array.each do |row|
-          contents = row.collect {|_k, v| v.content}
+          contents = row.collect {|_k, v| v.nil? ? '' : v.content }
           ws.add_row contents, :style => pascal
         end
 

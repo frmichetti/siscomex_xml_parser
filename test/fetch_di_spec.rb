@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'rspec'
 require 'nokogiri'
 require 'axlsx'
@@ -49,7 +51,7 @@ describe 'Read a XML and Fetch for DI' do
           looking_for_di = info
           # puts looking_for_di
 
-          values = %i(numeroDI agenciaIcms bancoIcms codigoTipoRecolhimentoIcms cpfResponsavelRegistro dataRegistro horaRegistro nomeTipoRecolhimentoIcms numeroSequencialIcms ufIcms valorTotalIcms)
+          values = %i(numeroDI numeroImportador agenciaIcms bancoIcms codigoTipoRecolhimentoIcms cpfResponsavelRegistro dataRegistro horaRegistro nomeTipoRecolhimentoIcms numeroSequencialIcms ufIcms valorTotalIcms)
 
           values.each {|v|
 
