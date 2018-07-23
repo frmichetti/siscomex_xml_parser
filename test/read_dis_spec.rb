@@ -35,6 +35,7 @@ describe 'Read XML and Parse to XLS' do
         # Numero DI
         numero_di = info.at_css('numeroDI')
         di_out[:numero_di] = numero_di
+        numero_di.content = "#{numero_di.content[0..1]}/#{numero_di.content[2..8]}-#{numero_di.content[9]}"
         expect(numero_di).not_to be_nil
         puts numero_di
 
@@ -62,6 +63,7 @@ describe 'Read XML and Parse to XLS' do
         # ICMS-cpf responsavel registro
         cpf_responsavel_registro = icms_info.at_css('cpfResponsavelRegistro')
         di_out[:cpf_responsavel_registro] = cpf_responsavel_registro
+        cpf_responsavel_registro.content = "#{cpf_responsavel_registro.content[0..2]}.#{cpf_responsavel_registro.content[3..5]}.#{cpf_responsavel_registro.content[6..8]}-#{cpf_responsavel_registro.content[9..10]}"
         expect(cpf_responsavel_registro).not_to be_nil
         puts cpf_responsavel_registro
 
