@@ -8,3 +8,5 @@ create table configurations(
 create unique index configurations_key_uindex
 	on configurations (key);
 
+insert into configurations (key, value) values ('version', 0.1);
+
