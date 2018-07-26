@@ -3,6 +3,23 @@ alter table destaquencm rename to destaque_ncm;
 alter table documentoinstrucaodespacho rename to documento_instrucao_despacho;
 alter table listadeclaracoes rename to lista_declaracoes;
 
+/*Adição*/
+alter table adicao rename column adicao_id to id;
+alter table adicao rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table adicao rename column cidevaloraliquotaespecifica to cide_valor_aliquota_especifica;
+alter table adicao rename column cidevalordevido to cide_valor_devido;
+alter table adicao rename column cidevalorrecolher to cide_valor_recolher;
+alter table adicao rename column codigorelacaocompradorvendedor to codigo_relacao_comprador_vendedor;
+alter table adicao rename column codigovinculocompradorvendedor to codigo_vinculo_comprador_vendedor;
+
+
+
+
+
+
+/*Adição*/
+
+/*Declaração de Importação*/
 alter table declaracao_importacao rename column declaracaoimportacao_id to id;
 alter table declaracao_importacao rename column listadeclaracoes_id to lista_declaracoes_id;
 alter table declaracao_importacao rename column armazenamentorecintoaduaneirocodigo to armazenamento_recinto_aduaneiro_codigo;
@@ -82,56 +99,69 @@ alter table declaracao_importacao rename column viatransportenometransportador t
 alter table declaracao_importacao rename column viatransportepaistransportadorcodigo to via_transporte_pais_transportador_codigo;
 alter table declaracao_importacao rename column viatransportepaistransportadornome to via_transporte_pais_transportador_nome;
 alter table declaracao_importacao rename column documentoinstrucaodespacho_id to documento_instrucao_despacho_id;
+/*Declaração de Importação*/
 
+/*Pagamento*/
+alter table pagamento rename column pagamento_id to id;
+alter table pagamento rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table pagamento rename column agenciapagamento to agencia_pagamento;
+alter table pagamento rename column bancopagamento to banco_pagamento;
+alter table pagamento rename column codigoreceita to codigo_receita;
+alter table pagamento rename column codigotipopagamento to codigo_tipo_pagamento;
+alter table pagamento rename column contapagamento to conta_pagamento;
+alter table pagamento rename column datapagamento to data_pagamento;
+alter table pagamento rename column nometipopagamento to nome_tipo_pagamento;
+alter table pagamento rename column numeroretificacao to numero_retificacao;
+alter table pagamento rename column valorjurosencargos to valor_juros_encargos;
+alter table pagamento rename column valormulta to valor_multa;
+alter table pagamento rename column valorreceita to valor_receita;
+/*Pagamento*/
 
+/*Mercadoria*/
+alter table mercadoria rename column mercadoria_id to id;
+alter table mercadoria rename column descricaomercadoria to descricao_mercadoria;
+alter table mercadoria rename column numerosequencialitem to numero_sequencial_item;
+alter table mercadoria rename column unidademedida to unidade_medida;
+alter table mercadoria rename column valorunitario to valor_unitario;
+/*Mercadoria*/
 
+/*Lista de Declarações*/
+alter table lista_declaracoes rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table lista_declaracoes rename column lista_declaracoes_id to id;
+/*Lista de Declarações*/
 
+/*ICMS*/
+alter table icms rename column icms_id to id;
+alter table icms rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table icms rename column agenciaicms to agencia_icms;
+alter table icms rename column bancoicms to banco_icms;
+alter table icms rename column codigotiporecolhimentoicms to codigo_tipo_recolhimento_icms;
+alter table icms rename column cpfresponsavelregistro to cpf_responsavel_registro;
+alter table icms rename column dataregistro to data_registro;
+alter table icms rename column horaregistro to hora_registro;
+alter table icms rename column nometiporecolhimentoicms to nome_tipo_recolhimento_icms;
+alter table icms rename column numerosequencialicms to numero_sequencial_icms;
+alter table icms rename column uficms to uf_icms;
+alter table icms rename column valortotalicms to valor_total_icms;
+/*ICMS*/
 
+/*Embalagem*/
+alter table embalagem rename column embalagem_id to id;
+alter table embalagem rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table embalagem rename column codigotipoembalagem to codigo_tipo_embalagem;
+alter table embalagem rename column nomeembalagem to nome_embalagem;
+alter table embalagem rename column quantidadevolume to quantidade_volume;
+/*Embalagem*/
 
+/*Destaque NCM*/
+alter table destaque_ncm rename column destaquencm_id to destaque_ncm_id;
+alter table destaque_ncm rename column numerodestaque to numero_destaque;
+/*Destaque NCM*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Documento Instrução Despacho*/
+alter table documento_instrucao_despacho rename column documentoinstrucaodespacho_id to id;
+alter table documento_instrucao_despacho rename column declaracaoimportacao_id to declaracao_importacao_id;
+alter table documento_instrucao_despacho rename column codigotipodocumentodespacho to codigo_tipo_documento_despacho;
+alter table documento_instrucao_despacho rename column nomedocumentodespacho to nome_documento_despacho;
+alter table documento_instrucao_despacho rename column numerodocumentodespacho to numero_documento_despacho;
+/*Documento Instrução Despacho*/

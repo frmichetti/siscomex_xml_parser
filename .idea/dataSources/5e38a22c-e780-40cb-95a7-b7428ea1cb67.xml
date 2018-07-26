@@ -61,8 +61,8 @@
     <schema id="12" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-07-26.14:11:26.156</IntrospectionTimestamp>
-      <IntrospectionStateNumber>638</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-07-26.15:04:06.563</IntrospectionTimestamp>
+      <IntrospectionStateNumber>689</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -150,22 +150,22 @@
       <StateNumber>548</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="29" parent="19" name="adicao_id">
+    <column id="29" parent="19" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>684</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="30" parent="19" name="declaracaoimportacao_id">
+    <column id="30" parent="19" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>685</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="31" parent="19" name="cidevaloraliquotaespecifica">
+    <column id="31" parent="19" name="cide_valor_aliquota_especifica">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>686</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="32" parent="19" name="cidevalordevido">
@@ -174,22 +174,22 @@
       <StateNumber>548</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="33" parent="19" name="cidevalorrecolher">
+    <column id="33" parent="19" name="cide_valor_recolher">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>687</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="34" parent="19" name="codigorelacaocompradorvendedor">
+    <column id="34" parent="19" name="codigo_relacao_comprador_vendedor">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>688</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="35" parent="19" name="codigovinculocompradorvendedor">
+    <column id="35" parent="19" name="codigo_vinculo_comprador_vendedor">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>548</StateNumber>
+      <StateNumber>689</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="36" parent="19" name="cofinsaliquotaadvalorem">
@@ -890,12 +890,12 @@
     </column>
     <check id="152" parent="19" name="adicao_adicao_id_check">
       <ObjectId>16419</ObjectId>
-      <ColNames>adicao_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>adicao_id &gt;= 0</Predicate>
     </check>
     <check id="153" parent="19" name="adicao_declaracaoimportacao_id_check">
       <ObjectId>16420</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
     <check id="154" parent="19" name="adicao_mercadoria_id_check">
@@ -1453,10 +1453,10 @@
       <StateNumber>550</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="248" parent="21" name="destaquencm_id">
+    <column id="248" parent="21" name="destaque_ncm_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>550</StateNumber>
+      <StateNumber>678</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="249" parent="21" name="adicao_id">
@@ -1465,15 +1465,15 @@
       <StateNumber>550</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="250" parent="21" name="numerodestaque">
+    <column id="250" parent="21" name="numero_destaque">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>550</StateNumber>
+      <StateNumber>677</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <check id="251" parent="21" name="destaquencm_destaquencm_id_check">
       <ObjectId>16437</ObjectId>
-      <ColNames>destaquencm_id</ColNames>
+      <ColNames>destaque_ncm_id</ColNames>
       <Predicate>destaquencm_id &gt;= 0</Predicate>
     </check>
     <check id="252" parent="21" name="destaquencm_adicao_id_check">
@@ -1487,44 +1487,44 @@
       <StateNumber>551</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="254" parent="22" name="documentoinstrucaodespacho_id">
+    <column id="254" parent="22" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>679</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="255" parent="22" name="declaracaoimportacao_id">
+    <column id="255" parent="22" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>680</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="256" parent="22" name="codigotipodocumentodespacho">
+    <column id="256" parent="22" name="codigo_tipo_documento_despacho">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>681</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="257" parent="22" name="nomedocumentodespacho">
+    <column id="257" parent="22" name="nome_documento_despacho">
       <Position>5</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>682</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="258" parent="22" name="numerodocumentodespacho">
+    <column id="258" parent="22" name="numero_documento_despacho">
       <Position>6</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>551</StateNumber>
+      <StateNumber>683</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <check id="259" parent="22" name="documentoinstrucaodespacho_documentoinstrucaodespacho_id_check">
       <ObjectId>16445</ObjectId>
-      <ColNames>documentoinstrucaodespacho_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>documentoinstrucaodespacho_id &gt;= 0</Predicate>
     </check>
     <check id="260" parent="22" name="documentoinstrucaodespacho_declaracaoimportacao_id_check">
       <ObjectId>16446</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
     <column id="261" parent="23" name="document_id">
@@ -1533,44 +1533,44 @@
       <StateNumber>552</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="262" parent="23" name="embalagem_id">
+    <column id="262" parent="23" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>552</StateNumber>
+      <StateNumber>672</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="263" parent="23" name="declaracaoimportacao_id">
+    <column id="263" parent="23" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>552</StateNumber>
+      <StateNumber>673</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="264" parent="23" name="codigotipoembalagem">
+    <column id="264" parent="23" name="codigo_tipo_embalagem">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>552</StateNumber>
+      <StateNumber>674</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="265" parent="23" name="nomeembalagem">
+    <column id="265" parent="23" name="nome_embalagem">
       <Position>5</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>552</StateNumber>
+      <StateNumber>675</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="266" parent="23" name="quantidadevolume">
+    <column id="266" parent="23" name="quantidade_volume">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>552</StateNumber>
+      <StateNumber>676</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <check id="267" parent="23" name="embalagem_embalagem_id_check">
       <ObjectId>16453</ObjectId>
-      <ColNames>embalagem_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>embalagem_id &gt;= 0</Predicate>
     </check>
     <check id="268" parent="23" name="embalagem_declaracaoimportacao_id_check">
       <ObjectId>16454</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
     <column id="269" parent="24" name="document_id">
@@ -1579,86 +1579,86 @@
       <StateNumber>553</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="270" parent="24" name="icms_id">
+    <column id="270" parent="24" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>669</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="271" parent="24" name="declaracaoimportacao_id">
+    <column id="271" parent="24" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>656</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="272" parent="24" name="agenciaicms">
+    <column id="272" parent="24" name="agencia_icms">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>657</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="273" parent="24" name="bancoicms">
+    <column id="273" parent="24" name="banco_icms">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>658</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="274" parent="24" name="codigotiporecolhimentoicms">
+    <column id="274" parent="24" name="codigo_tipo_recolhimento_icms">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>659</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="275" parent="24" name="cpfresponsavelregistro">
+    <column id="275" parent="24" name="cpf_responsavel_registro">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>660</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="276" parent="24" name="dataregistro">
+    <column id="276" parent="24" name="data_registro">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>661</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="277" parent="24" name="horaregistro">
+    <column id="277" parent="24" name="hora_registro">
       <Position>9</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>662</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="278" parent="24" name="nometiporecolhimentoicms">
+    <column id="278" parent="24" name="nome_tipo_recolhimento_icms">
       <Position>10</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>663</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="279" parent="24" name="numerosequencialicms">
+    <column id="279" parent="24" name="numero_sequencial_icms">
       <Position>11</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>664</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="280" parent="24" name="uficms">
+    <column id="280" parent="24" name="uf_icms">
       <Position>12</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>665</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="281" parent="24" name="valortotalicms">
+    <column id="281" parent="24" name="valor_total_icms">
       <Position>13</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>553</StateNumber>
+      <StateNumber>666</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <check id="282" parent="24" name="icms_icms_id_check">
       <ObjectId>16461</ObjectId>
-      <ColNames>icms_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>icms_id &gt;= 0</Predicate>
     </check>
     <check id="283" parent="24" name="icms_declaracaoimportacao_id_check">
       <ObjectId>16462</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
     <column id="284" parent="25" name="document_id">
@@ -1667,26 +1667,26 @@
       <StateNumber>546</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="285" parent="25" name="listadeclaracoes_id">
+    <column id="285" parent="25" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>546</StateNumber>
+      <StateNumber>668</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="286" parent="25" name="declaracaoimportacao_id">
+    <column id="286" parent="25" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>546</StateNumber>
+      <StateNumber>655</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <check id="287" parent="25" name="listadeclaracoes_listadeclaracoes_id_check">
       <ObjectId>16398</ObjectId>
-      <ColNames>listadeclaracoes_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>listadeclaracoes_id &gt;= 0</Predicate>
     </check>
     <check id="288" parent="25" name="listadeclaracoes_declaracaoimportacao_id_check">
       <ObjectId>16399</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
     <column id="289" parent="26" name="document_id">
@@ -1695,10 +1695,10 @@
       <StateNumber>549</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="290" parent="26" name="mercadoria_id">
+    <column id="290" parent="26" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>549</StateNumber>
+      <StateNumber>670</StateNumber>
       <TypeId>20</TypeId>
     </column>
     <column id="291" parent="26" name="adicao_id">
@@ -1707,16 +1707,16 @@
       <StateNumber>549</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="292" parent="26" name="descricaomercadoria">
+    <column id="292" parent="26" name="descricao_mercadoria">
       <Position>4</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>549</StateNumber>
+      <StateNumber>654</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="293" parent="26" name="numerosequencialitem">
+    <column id="293" parent="26" name="numero_sequencial_item">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>549</StateNumber>
+      <StateNumber>651</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="294" parent="26" name="quantidade">
@@ -1725,21 +1725,21 @@
       <StateNumber>549</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="295" parent="26" name="unidademedida">
+    <column id="295" parent="26" name="unidade_medida">
       <Position>7</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>549</StateNumber>
+      <StateNumber>652</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="296" parent="26" name="valorunitario">
+    <column id="296" parent="26" name="valor_unitario">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>549</StateNumber>
+      <StateNumber>653</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <check id="297" parent="26" name="mercadoria_mercadoria_id_check">
       <ObjectId>16429</ObjectId>
-      <ColNames>mercadoria_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>mercadoria_id &gt;= 0</Predicate>
     </check>
     <check id="298" parent="26" name="mercadoria_adicao_id_check">
@@ -1753,92 +1753,92 @@
       <StateNumber>554</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="300" parent="27" name="pagamento_id">
+    <column id="300" parent="27" name="id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>671</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="301" parent="27" name="declaracaoimportacao_id">
+    <column id="301" parent="27" name="declaracao_importacao_id">
       <Position>3</Position>
       <DataType>bigint|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>639</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="302" parent="27" name="agenciapagamento">
+    <column id="302" parent="27" name="agencia_pagamento">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="303" parent="27" name="bancopagamento">
+    <column id="303" parent="27" name="banco_pagamento">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>641</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="304" parent="27" name="codigoreceita">
+    <column id="304" parent="27" name="codigo_receita">
       <Position>6</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>642</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="305" parent="27" name="codigotipopagamento">
+    <column id="305" parent="27" name="codigo_tipo_pagamento">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>643</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="306" parent="27" name="contapagamento">
+    <column id="306" parent="27" name="conta_pagamento">
       <Position>8</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>644</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="307" parent="27" name="datapagamento">
+    <column id="307" parent="27" name="data_pagamento">
       <Position>9</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>645</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="308" parent="27" name="nometipopagamento">
+    <column id="308" parent="27" name="nome_tipo_pagamento">
       <Position>10</Position>
       <DataType>text|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>646</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="309" parent="27" name="numeroretificacao">
+    <column id="309" parent="27" name="numero_retificacao">
       <Position>11</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>647</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="310" parent="27" name="valorjurosencargos">
+    <column id="310" parent="27" name="valor_juros_encargos">
       <Position>12</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>648</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="311" parent="27" name="valormulta">
+    <column id="311" parent="27" name="valor_multa">
       <Position>13</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>650</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="312" parent="27" name="valorreceita">
+    <column id="312" parent="27" name="valor_receita">
       <Position>14</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>554</StateNumber>
+      <StateNumber>649</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <check id="313" parent="27" name="pagamento_pagamento_id_check">
       <ObjectId>16469</ObjectId>
-      <ColNames>pagamento_id</ColNames>
+      <ColNames>id</ColNames>
       <Predicate>pagamento_id &gt;= 0</Predicate>
     </check>
     <check id="314" parent="27" name="pagamento_declaracaoimportacao_id_check">
       <ObjectId>16470</ObjectId>
-      <ColNames>declaracaoimportacao_id</ColNames>
+      <ColNames>declaracao_importacao_id</ColNames>
       <Predicate>declaracaoimportacao_id &gt;= 0</Predicate>
     </check>
   </database-model>
