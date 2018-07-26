@@ -1,0 +1,4 @@
+CREATE DATABASE siscomex
+  WITH ENCODING='UTF8'
+       OWNER=siscomex
+       CONNECTION LIMIT=-1;
