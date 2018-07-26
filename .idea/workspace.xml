@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sql/create_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/fix_siscomex_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67/storage_v2/_src_/database/siscomex.N_d5Jg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67/storage_v2/_src_/database/siscomex.N_d5Jg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix_siscomex_tables.sql/create_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix_siscomex_tables.sql/create_database_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_database_schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fix_siscomex_tables.sql/create_siscomex_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_siscomex_tables.sql" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,14 +74,7 @@
         <item name="siscomex: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
-        <item name="adicao: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="siscomex@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="siscomex: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="access methods" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="declaracao_importacao: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -87,17 +85,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="create_database.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sql/create_database.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -152,6 +140,10 @@
         <option value="$PROJECT_DIR$/test/fetch_di_spec.rb" />
         <option value="$PROJECT_DIR$/bin/run_read_icms_report.bat" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/sql/create_role" />
+        <option value="$PROJECT_DIR$/sql/create_database_schema.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5e38a22c-e780-40cb-95a7-b7428ea1cb67/console.sql" />
+        <option value="$PROJECT_DIR$/sql/fix_siscomex_tables.sql" />
       </list>
     </option>
   </component>
@@ -202,22 +194,12 @@
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="xsd" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,6 +211,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -418,7 +401,7 @@
       <workItem from="1532375353072" duration="4241000" />
       <workItem from="1532379608129" duration="1975000" />
       <workItem from="1532455051508" duration="12000" />
-      <workItem from="1532618964659" duration="1625000" />
+      <workItem from="1532618964659" duration="3241000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing Reports.">
       <created>1530563320235</created>
@@ -470,7 +453,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73166000" />
+    <option name="totallyTimeSpent" value="74782000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,17 +465,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32834226" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.23027718" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32941177" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.23027718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20362474" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20362474" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -636,34 +620,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="162" column="39" lean-forward="true" selection-start-line="162" selection-start-column="39" selection-end-line="162" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -834,9 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5e38a22c-e780-40cb-95a7-b7428ea1cb67/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/xsd/ListaDeclaracoes.xsd">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -866,30 +819,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html" />
     <entry file="file://$PROJECT_DIR$/public/README.md" />
-    <entry file="file://$PROJECT_DIR$/dis/consultaDI201807021415.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="6368" column="16" selection-start-line="6368" selection-start-column="16" selection-end-line="6368" selection-end-column="16" />
-          <folding>
-            <element signature="n#declaracaoImportacao#0;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="e#7158#9864#0" />
-            <element signature="e#9877#12583#0" />
-            <element signature="e#15136#27237#0" />
-            <element signature="e#29213#29562#0" />
-            <element signature="e#29571#29920#0" />
-            <element signature="e#29929#30278#0" />
-            <element signature="e#30287#30536#0" />
-            <element signature="n#declaracaoImportacao#1;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#2;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#3;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#4;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#5;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#6;n#ListaDeclaracoes#0;n#!!top" />
-            <element signature="n#declaracaoImportacao#7;n#ListaDeclaracoes#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/read_icms_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -943,10 +872,72 @@
     <entry file="file://$PROJECT_DIR$/bin/xsd2pgschema-2.12.5/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5e38a22c-e780-40cb-95a7-b7428ea1cb67/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sql/create_database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="85">
+          <caret line="5" column="27" lean-forward="true" selection-end-line="410" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/create_database_schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/create_siscomex_tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://5e38a22c-e780-40cb-95a7-b7428ea1cb67/database/siscomex/schema/public/table/adicao">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ctid" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dis/consultaDI201807021415.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="6368" column="16" selection-start-line="6368" selection-start-column="16" selection-end-line="6368" selection-end-column="16" />
+          <folding>
+            <element signature="n#declaracaoImportacao#0;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="e#7158#9864#0" />
+            <element signature="e#9877#12583#0" />
+            <element signature="e#15136#27237#0" />
+            <element signature="e#29213#29562#0" />
+            <element signature="e#29571#29920#0" />
+            <element signature="e#29929#30278#0" />
+            <element signature="e#30287#30536#0" />
+            <element signature="n#declaracaoImportacao#1;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#2;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#3;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#4;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#5;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#6;n#ListaDeclaracoes#0;n#!!top" />
+            <element signature="n#declaracaoImportacao#7;n#ListaDeclaracoes#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/fix_siscomex_tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
