@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/controllers/file_ctrl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/file_ctrl.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T14-57-44+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-12-41+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-12-47+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-14-35+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-14-43+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-15-27+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.2018-07-27T15-15-31+01-00.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/relatorio.dis.xxx.xlsx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +25,7 @@
     <SUITE FILE_PATH="coverage/Teste@IRB_console__Teste.rcov" NAME="IRB console: Teste Coverage Results" MODIFIED="1530304414012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__read_dis_spec___Teste.rcov" NAME="Run spec 'read_dis_spec': Teste Coverage Results" MODIFIED="1532697345809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__read_icms_spec___Teste.rcov" NAME="Run spec 'read_icms_spec': Teste Coverage Results" MODIFIED="1532627115732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
-    <SUITE FILE_PATH="coverage/Teste@config_ru.rcov" NAME="config.ru Coverage Results" MODIFIED="1532700746128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
+    <SUITE FILE_PATH="coverage/Teste@config_ru.rcov" NAME="config.ru Coverage Results" MODIFIED="1532701138486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__my_example_spec___Teste.rcov" NAME="Run spec 'my_example_spec': Teste Coverage Results" MODIFIED="1532008312428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__fetch_di_spec___Teste.rcov" NAME="Run spec 'fetch_di_spec': Teste Coverage Results" MODIFIED="1532377219977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
   </component>
@@ -105,8 +112,8 @@
       <file leaf-file-name="file_ctrl.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+            <state relative-caret-position="867">
+              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -242,11 +249,6 @@
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
@@ -436,7 +438,7 @@
       <workItem from="1532455051508" duration="12000" />
       <workItem from="1532618964659" duration="25749000" />
       <workItem from="1532649379286" duration="242000" />
-      <workItem from="1532695034023" duration="5886000" />
+      <workItem from="1532695034023" duration="6165000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing Reports.">
       <created>1530563320235</created>
@@ -488,7 +490,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103418000" />
+    <option name="totallyTimeSpent" value="103697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,17 +575,12 @@
           <option name="timeStamp" value="158" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb</url>
-          <line>14</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
           <line>24</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="223" />
+      <option name="time" value="224" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -989,8 +986,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="867">
+          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
         </state>
       </provider>
     </entry>

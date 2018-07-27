@@ -54,12 +54,15 @@ module Controllers
               }
             rescue StandardError => e
               ModelException.new("Error on Upload", 400, 400, e).to_response
+            ensure
+              file.close
             end
           }
 
 
           c.get('/consulta') {
 
+            begin
             di_array = []
 
             extend ReadFiles
@@ -82,6 +85,11 @@ module Controllers
             temp = File.new(output_file_path)
             send_file temp.path, :filename => output_file_path, :type => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
+            rescue StandardError => e
+              ModelException.new("Error on Retrieve files", 400, 400, e).to_response
+            ensure
+              temp.close
+            end
 
           }
 
