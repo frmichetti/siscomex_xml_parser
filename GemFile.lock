@@ -89,6 +89,8 @@ GEM
     tilt (2.0.8)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2018.5)
+      tzinfo (>= 1.0.0)
     unindentable (0.1.0)
     xls (0.1.2)
       commander (~> 4.1.3)
@@ -116,6 +118,7 @@ DEPENDENCIES
   sinatra-contrib
   sinatra-cross_origin
   sinatra-sequel
+  tzinfo-data
   xls
 
 RUBY VERSION

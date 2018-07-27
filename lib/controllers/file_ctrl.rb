@@ -54,8 +54,6 @@ module Controllers
               }
             rescue StandardError => e
               ModelException.new("Error on Upload", 400, 400, e).to_response
-            ensure
-              file.close
             end
           }
 
@@ -87,8 +85,6 @@ module Controllers
 
             rescue StandardError => e
               ModelException.new("Error on Retrieve files", 400, 400, e).to_response
-            ensure
-              temp.close
             end
 
           }

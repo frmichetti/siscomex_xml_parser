@@ -20,6 +20,7 @@ gem 'sinatra-cross_origin'
 gem 'sinatra-sequel'
 gem 'sinatra-authorization'
 gem 'sinatra-contrib'
+gem 'tzinfo-data'
 
 group :test do
   gem 'rspec'
