@@ -3,5 +3,5 @@
 # connection_factory.rb
 ConnectionFactory = Utils::ConnectionFactory
 
-# configuration.rb
+# configuration_ctrl.rb
 Configuration = Models::Configuration

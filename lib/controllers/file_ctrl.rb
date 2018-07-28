@@ -12,9 +12,27 @@ module Controllers
             make_default_json_api(instance: self) {
               dis_paths = Dir[DI_FILE_DIR + '/**.xml']
               xml_paths = Dir[XML_FILE_DIR + '/**.xml']
-              puts "teste"
+              dirs = {paths: dis_paths, label: :dis}, {paths: xml_paths, label: :xml}
+              output = []
 
-              {dis: dis_paths, xml: xml_paths}
+              dirs.each do |dir|
+                  dir[:paths].each do |p|
+                    file = File.open(p)
+
+                    output << dir[:label] = {
+                        path: file.path,
+                        size: file.size,
+                        name: file.path.split('/').last,
+                        modification_time: file.mtime,
+                        last_access_time: file.atime,
+                        birth_time: file.birthtime,
+                        creation_time: file.ctime
+                    }
+
+                  end
+              end
+
+              {dirs: output}
             }
           }
 
