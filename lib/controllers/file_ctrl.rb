@@ -16,20 +16,21 @@ module Controllers
               output = []
 
               dirs.each do |dir|
-                  dir[:paths].each do |p|
-                    file = File.open(p)
+                dir[:paths].each do |p|
+                  file = File.open(p)
 
-                    output << dir[:label] = {
-                        path: file.path,
-                        size: file.size,
-                        name: file.path.split('/').last,
-                        modification_time: file.mtime,
-                        last_access_time: file.atime,
-                        birth_time: file.birthtime,
-                        creation_time: file.ctime
-                    }
+                  output << dir[:label] = {
+                      path: file.path,
+                      size: file.size,
+                      name: file.path.split('/').last,
+                      extension: file.path.split('.').last,
+                      modification_time: file.mtime,
+                      last_access_time: file.atime,
+                      birth_time: file.birthtime,
+                      creation_time: file.ctime
+                  }
 
-                  end
+                end
               end
 
               {dirs: output}
@@ -79,27 +80,27 @@ module Controllers
           c.get('/consulta') {
 
             begin
-            di_array = []
+              di_array = []
 
-            extend ReadFiles
-            files = discover_di_files(Dir.pwd + '/dis/')
-            extend ReadParseXML
+              extend ReadFiles
+              files = discover_di_files(Dir.pwd + '/dis/')
+              extend ReadParseXML
 
-            files.each do |f|
-              di_array = parse_xml(f)
-            end
+              files.each do |f|
+                di_array = parse_xml(f)
+              end
 
-            extend WriteXLS
+              extend WriteXLS
 
-            date_time = DateTime.now.to_s
-            date_time.gsub!(":", '-')
+              date_time = DateTime.now.to_s
+              date_time.gsub!(":", '-')
 
-            output_file_path = Dir.pwd + "/output/relatorio.dis.#{date_time}.xlsx"
+              output_file_path = Dir.pwd + "/output/relatorio.dis.#{date_time}.xlsx"
 
-            save_xls_file_report(di_array, output_file_path)
+              save_xls_file_report(di_array, output_file_path)
 
-            temp = File.new(output_file_path)
-            send_file temp.path, :filename => output_file_path, :type => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+              temp = File.new(output_file_path)
+              send_file temp.path, :filename => output_file_path, :type => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
             rescue StandardError => e
               ModelException.new("Error on Retrieve files", 400, 400, e).to_response
