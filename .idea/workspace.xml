@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67/storage_v2/_src_/database/siscomex.N_d5Jg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e38a22c-e780-40cb-95a7-b7428ea1cb67/storage_v2/_src_/database/siscomex.N_d5Jg/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="d0170e9e-a7b3-4e46-b974-3adf9fad1b29" name="Default" comment="Added Git ignore.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controllers/file_ctrl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controllers/file_ctrl.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cron/file_scheduler.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cron/file_scheduler.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create_database_siscomex.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_database_siscomex.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis/consultaDI201807021415.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis/consultaDI201807160904.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis/consultaDI201807221723.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +16,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Teste@app.rcov" NAME="app Coverage Results" MODIFIED="1532638301356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__my_test_spec___Teste.rcov" NAME="Run spec 'my_test_spec': Teste Coverage Results" MODIFIED="1530304256687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
-    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_icms_spec___Teste.rcov" NAME="Run spec 'read_icms_spec': Teste Coverage Results" MODIFIED="1532627115732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@config_ru.rcov" NAME="config.ru Coverage Results" MODIFIED="1532790093462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
+    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_icms_spec___Teste.rcov" NAME="Run spec 'read_icms_spec': Teste Coverage Results" MODIFIED="1532790450378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@IRB_console__Teste.rcov" NAME="IRB console: Teste Coverage Results" MODIFIED="1530304414012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Teste" />
-    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_dis_spec___Teste.rcov" NAME="Run spec 'read_dis_spec': Teste Coverage Results" MODIFIED="1532697345809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
+    <SUITE FILE_PATH="coverage/Teste@Run_spec__read_dis_spec___Teste.rcov" NAME="Run spec 'read_dis_spec': Teste Coverage Results" MODIFIED="1532790436986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
     <SUITE FILE_PATH="coverage/Teste@Run_spec__my_example_spec___Teste.rcov" NAME="Run spec 'my_example_spec': Teste Coverage Results" MODIFIED="1532008312428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
-    <SUITE FILE_PATH="coverage/Teste@Run_spec__fetch_di_spec___Teste.rcov" NAME="Run spec 'fetch_di_spec': Teste Coverage Results" MODIFIED="1532377219977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
+    <SUITE FILE_PATH="coverage/Teste@Run_spec__fetch_di_spec___Teste.rcov" NAME="Run spec 'fetch_di_spec': Teste Coverage Results" MODIFIED="1532790464489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" MODULE_NAME="Teste" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -88,23 +86,26 @@
     <session id="-1973190197">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="10" />
           <entry key="rb" value="2167" />
-          <entry key="sql" value="396" />
+          <entry key="sql" value="441" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Ruby" value="2167" />
-          <entry key="SQL" value="302" />
+          <entry key="SQL" value="347" />
           <entry key="Scratch" value="94" />
         </counts>
       </usages-collector>
@@ -116,19 +117,25 @@
           <entry key="destaque_ncm" value="5" />
           <entry key="embalagem" value="1" />
           <entry key="file_sync" value="10" />
+          <entry key="gitignore" value="1" />
           <entry key="icms" value="9" />
           <entry key="lista_declaracoes" value="2" />
+          <entry key="lock" value="1" />
+          <entry key="md" value="1" />
           <entry key="mercadoria" value="4" />
-          <entry key="rb" value="18" />
-          <entry key="sql" value="20" />
+          <entry key="rb" value="21" />
+          <entry key="ru" value="1" />
+          <entry key="sql" value="23" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="39" />
-          <entry key="Ruby" value="18" />
-          <entry key="SQL" value="10" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Ruby" value="22" />
+          <entry key="SQL" value="13" />
           <entry key="Scratch" value="10" />
           <entry key="XML" value="11" />
         </counts>
@@ -136,17 +143,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/cron/file_scheduler.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -214,7 +211,6 @@
         <option value="$PROJECT_DIR$/test/read_icms_spec.rb" />
         <option value="$PROJECT_DIR$/test/fetch_di_spec.rb" />
         <option value="$PROJECT_DIR$/bin/run_read_icms_report.bat" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sql/create_role" />
         <option value="$PROJECT_DIR$/sql/create_database_schema.sql" />
         <option value="$PROJECT_DIR$/lib/aliases.rb" />
@@ -232,14 +228,15 @@
         <option value="$PROJECT_DIR$/GemFile" />
         <option value="$PROJECT_DIR$/sql/create_database.sql" />
         <option value="$PROJECT_DIR$/dis/consultaDI201807021415.xml" />
-        <option value="$PROJECT_DIR$/sql/fix_siscomex_tables.sql" />
         <option value="$PROJECT_DIR$/lib/controllers/file_ctrl.rb" />
         <option value="$PROJECT_DIR$/api/app.rb" />
-        <option value="$PROJECT_DIR$/sql/create_database_siscomex.sql" />
         <option value="$PROJECT_DIR$/lib/models/base.rb" />
         <option value="$PROJECT_DIR$/lib/utils/class_factory.rb" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5e38a22c-e780-40cb-95a7-b7428ea1cb67/console.sql" />
         <option value="$PROJECT_DIR$/lib/cron/file_scheduler.rb" />
+        <option value="$PROJECT_DIR$/sql/create_database_siscomex.sql" />
+        <option value="$PROJECT_DIR$/sql/fix_siscomex_tables.sql" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -261,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,53 +273,7 @@
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="dis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="cron" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Teste" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
@@ -340,10 +290,16 @@
               <item name="Teste" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Teste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Teste" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,8 +336,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rack.config.ru">
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Teste/public/index.html">
+  <component name="RunManager" selected="RSpec.Run spec 'fetch_di_spec': Teste">
+    <configuration name="Run spec 'fetch_di_spec': Teste" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="Teste" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/test" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/fetch_di_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
     <configuration name="Run spec 'read_dis_spec': Teste" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
@@ -475,18 +457,18 @@
     </configuration>
     <list>
       <item itemvalue="RSpec.Run spec 'read_icms_spec': Teste" />
-      <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Ruby.app" />
       <item itemvalue="Rack.config.ru" />
       <item itemvalue="RSpec.Run spec 'read_dis_spec': Teste" />
+      <item itemvalue="RSpec.Run spec 'fetch_di_spec': Teste" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Rack.config.ru" />
-        <item itemvalue="RSpec.Run spec 'read_dis_spec': Teste" />
-        <item itemvalue="Ruby.app" />
+        <item itemvalue="RSpec.Run spec 'fetch_di_spec': Teste" />
         <item itemvalue="RSpec.Run spec 'read_icms_spec': Teste" />
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="RSpec.Run spec 'read_dis_spec': Teste" />
+        <item itemvalue="Rack.config.ru" />
+        <item itemvalue="Ruby.app" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +510,8 @@
       <workItem from="1532705566337" duration="2820000" />
       <workItem from="1532726705289" duration="5872000" />
       <workItem from="1532782744980" duration="4177000" />
-      <workItem from="1532787412632" duration="2678000" />
+      <workItem from="1532787412632" duration="3189000" />
+      <workItem from="1532868773160" duration="1107000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing Reports.">
       <created>1530563320235</created>
@@ -548,15 +531,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.27 at 10h 07m 30s.xml">
-      <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.27 at 10h 08m 46s.xml">
-      <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.27 at 10h 09m 29s.xml">
-      <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.27 at 10h 10m 47s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
@@ -578,9 +552,18 @@
     <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.27 at 10h 15m 48s.xml">
       <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_spec_'read_dis_spec'__Teste - 2018.07.28 at 12h 07m 25s.xml">
+      <configuration name="Run spec 'read_dis_spec': Teste" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'read_icms_spec'__Teste - 2018.07.28 at 12h 07m 31s.xml">
+      <configuration name="Run spec 'read_icms_spec': Teste" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_spec_'fetch_di_spec'__Teste - 2018.07.28 at 12h 07m 50s.xml">
+      <configuration name="Run spec 'fetch_di_spec': Teste" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123411000" />
+    <option name="totallyTimeSpent" value="125029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,24 +579,24 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21215352" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21428572" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3283582" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3283582" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32777116" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.3816631" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3816631" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3283582" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.2889126" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.3283582" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3283582" />
+      <window_info anchor="bottom" id="Version Control" order="11" visible="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.23614073" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18336888" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,25 +619,9 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <condition expression="v.nil?" language="ruby" />
-          <url>file://$PROJECT_DIR$/lib/write_xls.rb</url>
-          <line>45</line>
-          <option name="timeStamp" value="158" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/test/read_dis_spec.rb</url>
-          <line>24</line>
-          <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb</url>
           <line>54</line>
           <option name="timeStamp" value="220" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb</url>
-          <line>11</line>
-          <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/lib/cron/file_scheduler.rb</url>
@@ -763,23 +730,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql/create_siscomex_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/utils/connection_factory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/loadpath.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/class_factory.conf.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -848,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/exceptions/model_exception.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -873,13 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-885">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/write_xls.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -918,13 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
@@ -977,13 +906,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/fix_siscomex_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://5e38a22c-e780-40cb-95a7-b7428ea1cb67/database/siscomex/schema/public/table/acrescimo">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1008,13 +930,6 @@
           <column-attributes>
             <column name="ctid" enabled="false" />
           </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/create_database_siscomex.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="409" lean-forward="true" selection-start-line="409" selection-end-line="409" />
         </state>
       </provider>
     </entry>
@@ -1097,8 +1012,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/controllers/file_ctrl.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        <state relative-caret-position="-471">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/create_database_siscomex.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -1106,6 +1028,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GemFile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/write_xls.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/read_dis_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/fix_siscomex_tables.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
