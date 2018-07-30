@@ -50,6 +50,9 @@ module Controllers
             extend FileCopy
 
             begin
+
+              # raise ModelException.new 'No file received.' unless file
+
               copy file[:tempfile], File.new(DI_FILE_DIR + '/' + file[:filename], 'w+')
 
               FileScheduler.new(File.open(DI_FILE_DIR + '/' + file[:filename])) {|file|
@@ -87,8 +90,10 @@ module Controllers
               extend ReadParseXML
 
               files.each do |f|
-                di_array = parse_xml(f)
+                di_array << parse_xml(f)
               end
+
+              di_array.flatten!
 
               extend WriteXLS
 
