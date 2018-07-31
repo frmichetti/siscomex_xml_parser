@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>Siscomex Api Server</title>
@@ -9,7 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel=stylesheet" href="css/style.css"/>
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -20,40 +23,91 @@
 
     </script>
 </head>
-<body ng-controller="FileUploadController">
+<body>
 
 <div class="container">
     <div class="row">
         <h1>Siscomex Api</h1>
     </div>
+
     <div class="row">
-        <form method="post" action="http://localhost:8089/api/file" enctype="multipart/form-data">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <input type="hidden" id="file_path" name="file_path" value="xml" />
-                    <input type="submit" class="btn btn-outline-secondary" />
+
+    </div>
+
+
+    <div class="row">
+        <div class="jumbotron">
+            <div class="bs-example">
+
+                <div class="alert alert-primary" role="alert">
+                    Envie um arquivo XML para obter o relatório individual!
                 </div>
-                <div class="custom-file">
-                    <input type="file" accept="xml/*" class="custom-file-input" id="file" required name="file" />
-                    <label class="custom-file-label" for="file">Choose file</label>
+
+                <form method="post" action="http://localhost:8089/api/file" enctype="multipart/form-data">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <input type="hidden" id="file_path" name="file_path" value="xml"/>
+                            <input type="submit" class="btn btn-outline-primary"/>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" accept="xml/*" class="custom-file-input" id="file" required name="file"/>
+                            <label class="custom-file-label" for="file">Choose file</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="alert alert-success" role="alert">
+                Gere um relatório geral contento todos os XMLS enviados!
+            </div>
+        </div>
+
+
+        <div class="row">
+            <a class="btn btn-success btn-lg btn-block" href="http://localhost:8089/api/consulta">Obter Relatório
+                Geral</a>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="alert alert-info" role="alert">
+                Pesquisa por Número de DI.
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Número da DI" aria-label="Recipient's username" aria-describedby="button-addon2" ng-model="numero_di">
+                <div class="input-group-append">
+                    <a href="http://localhost:8089/api/consulta/{{numero_di}}" class="btn btn-outline-info"  id="button-addon2">Pesquisar</a>
                 </div>
             </div>
+            Pesquisar por DI: {{numero_di}}
+        </div>
 
-        </form>
     </div>
-    <div class="row">
-        <a class="btn btn-primary btn-lg btn-block" href="http://localhost:8089/api/consulta">Obter Relatório Geral</a>
-    </div>
+
+
 </div>
-
-
-
 
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ ruby '2.5.1'
 gem 'axlsx'
 gem 'nokogiri'
 gem 'xls'
-gem 'ruby-debug-ide'
+gem 'ruby-debug-ide', require: false
 gem 'pg'
 
 gem 'sequel'
