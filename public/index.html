@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title>Siscomex Api Server</title>
@@ -20,30 +20,67 @@
 
     <script>
 
-
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $http) {
+            $http.get("http://localhost:8089/api/files")
+                .then(function(response) {
+                    $scope.files = response.data.dirs;
+                });
+        });
     </script>
 </head>
-<body>
+<body ng-controller="myCtrl">
 
 <div class="container">
     <div class="row">
-        <h1>Siscomex Api</h1>
-    </div>
-
-    <div class="row">
-
-    </div>
-
-
-    <div class="row">
         <div class="jumbotron">
+            <h3>Siscomex Api</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="alert alert-success btn-lg btn-block" role="alert">
+            Arquivos XML Carregados
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <table class="table table-striped" >
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Hora Criação</th>
+                <th scope="col">Tamanho</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="file in files">
+                <th scope="row">X</th>
+                <td>{{file.name}}</td>
+                <td>{{file.creation_time}}</td>
+                <td>{{file.size}}</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <div class="row">
 
                 <div class="alert alert-primary" role="alert">
                     Envie um arquivo XML para obter o relatório individual!
                 </div>
+            </div>
 
-                <form method="post" action="http://localhost:8089/api/file" enctype="multipart/form-data">
-                    <div class="form-group">
+            <div class="row">
+                <div class="form-group">
+                    <form method="post" action="http://localhost:8089/api/file" enctype="multipart/form-data">
+
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <input type="hidden" id="file_path" name="file_path" value="xml"/>
@@ -55,45 +92,59 @@
                                 <label class="custom-file-label" for="file">Choose file</label>
                             </div>
                         </div>
-                    </div>
-                </form>
-        </div>
 
-    </div>
-
-    <div class="jumbotron">
-        <div class="row">
-            <div class="alert alert-success" role="alert">
-                Gere um relatório geral contento todos os XMLS enviados!
-            </div>
-        </div>
-
-
-        <div class="row">
-            <a class="btn btn-success btn-lg btn-block" href="http://localhost:8089/api/consulta">Obter Relatório
-                Geral</a>
-        </div>
-    </div>
-
-    <div class="jumbotron">
-        <div class="row">
-            <div class="alert alert-info" role="alert">
-                Pesquisa por Número de DI.
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-group mb-3">
-                <input type="number" class="form-control" placeholder="Número da DI" aria-label="Recipient's username"
-                       aria-describedby="button-addon2" ng-model="numero_di">
-                <div class="input-group-append">
-                    <a href="http://localhost:8089/api/consulta/{{numero_di}}" class="btn btn-outline-info"
-                       id="button-addon2">Pesquisar</a>
+                    </form>
                 </div>
             </div>
-            <span>Pesquisar por DI: {{numero_di}}</span>
         </div>
+        <div class="col-sm" style="margin: 30px;">
+            <div class="row">
 
+                <div class="alert alert-success" role="alert">
+                    Gere um relatório geral contento todos os XMLS enviados!
+                </div>
+            </div>
+
+
+            <div class="row">
+                <a class="btn btn-success btn-lg btn-block" href="http://localhost:8089/api/consulta">Obter Relatório
+                    Geral</a>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="row">
+                <div class="alert alert-info" role="alert">
+                    Pesquisa por Número de DI.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" placeholder="Número da DI" aria-label="Recipient's username"
+                           aria-describedby="button-addon2" ng-model="numero_di">
+                    <div class="input-group-append">
+                        <a href="http://localhost:8089/api/consulta/{{numero_di}}" class="btn btn-outline-info"
+                           id="button-addon2">Pesquisar</a>
+                    </div>
+                </div>
+                <span>Pesquisar por DI: {{numero_di}}</span>
+            </div>
+        </div>
     </div>
+
+
+
+
+
+
+<div class="row">
+    <br />
+</div>
+
+
+
+
+</div>
 
 
 </div>
