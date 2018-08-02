@@ -27,14 +27,18 @@
                     $scope.files = response.data.dirs;
                 });
         });
+
+
+
     </script>
 </head>
 <body ng-controller="myCtrl">
 
 <div class="container">
     <div class="row">
-        <div class="jumbotron">
+        <div class="jumbotron bt-lg btn-block">
             <h3>Siscomex Api</h3>
+            <button class="btn btn-secondary" onclick="location.reload();">Atualizar</button>
         </div>
     </div>
 
@@ -101,7 +105,7 @@
             <div class="row">
 
                 <div class="alert alert-success" role="alert">
-                    Gere um relatório geral contento todos os XMLS enviados!
+                    Gere um relatório geral contendo todos os XMLS enviados!
                 </div>
             </div>
 

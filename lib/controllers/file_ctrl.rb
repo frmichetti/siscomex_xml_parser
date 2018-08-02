@@ -36,10 +36,21 @@ module Controllers
             end
           end
 
-          c.delete('/files/:file_path/:file_name') do
-            make_default_json_api(instance: self)
+          c.delete('/files/:file_name') do
+            make_default_json_api(instance: self) do
+              begin
+                file_name = params[:file_name]
 
-            puts 'teste'
+                f = File.open(DI_FILE_DIR + '/' + file_name)
+
+                File.delete(f.path)
+
+                {msg: 'File deleted!'}
+
+              rescue StandardError => e
+                ModelException.new("File with name #{file_name} not found.")
+              end
+            end
           end
 
           c.post('/file') do
@@ -91,54 +102,50 @@ module Controllers
                   config.options = opts
                 end
 
-                di_info = doc.xpath("//declaracaoImportacao")
+                di_info = doc.xpath('//declaracaoImportacao')
 
                 di_out = {}
 
                 di_info.each do |info|
-
                   # Numero DI
                   numero_di = info.at_css('numeroDI')
                   puts 'FOUND DI ' + numero_di
                 end
 
                 di_info.each do |info|
-
                   # Numero DI
                   numero_di = info.at_css('numeroDI')
 
-                  if numero_di.content === di_number
-                    puts 'LOOKUP FOR DI == ' + di_number
-                    looking_for_di = info
-                    # puts looking_for_di
+                  next unless numero_di.content === di_number
+                  puts 'LOOKUP FOR DI == ' + di_number
+                  looking_for_di = info
+                  # puts looking_for_di
 
-                    values = %i(numeroDI numeroImportador agenciaIcms bancoIcms codigoTipoRecolhimentoIcms cpfResponsavelRegistro dataRegistro horaRegistro nomeTipoRecolhimentoIcms numeroSequencialIcms ufIcms valorTotalIcms)
+                  values = %i[numeroDI numeroImportador agenciaIcms bancoIcms codigoTipoRecolhimentoIcms cpfResponsavelRegistro dataRegistro horaRegistro nomeTipoRecolhimentoIcms numeroSequencialIcms ufIcms valorTotalIcms]
 
-                    values.each {|v|
+                  values.each do |v|
+                    var = info.at_css(v.to_s)
+                    di_out[v] = var
+                    puts var
 
-                      var = info.at_css(v.to_s)
-                      di_out[v] = var
-                      puts var
-
-                      unless looking_for_di.nil?
-                        di_out[v] = looking_for_di.at_css(v.to_s)
-                      end
-                    }
-
-                    di_array << di_out
-                    di_out = {}
-
-                    # break
+                    unless looking_for_di.nil?
+                      di_out[v] = looking_for_di.at_css(v.to_s)
+                    end
                   end
+
+                  di_array << di_out
+                  di_out = {}
+
+                  # break
                 end
               end
 
               extend WriteXLS
 
               date_time = DateTime.now.to_s
-              date_time.gsub!(":", '-')
+              date_time.tr!(':', '-')
 
-              file_name =  Dir.pwd + "/output/relatorio.fetch.di.#{di_number}.#{date_time}.xlsx"
+              file_name = Dir.pwd + "/output/relatorio.fetch.di.#{di_number}.#{date_time}.xlsx"
 
               save_xls_file_report(di_array, file_name)
 
