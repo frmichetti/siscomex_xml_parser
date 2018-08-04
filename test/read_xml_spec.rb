@@ -53,13 +53,13 @@ describe 'My behaviour' do
         ws.add_row ['XML'], :style => title
         ws.add_row
 
-        rows = columns
+        rows = columns[1..-1]
 
         ws.add_row rows, :style => header
 
         # Passing one style applies the style to all columns
 
-        ws.add_row values, :style => pascal
+        ws.add_row values[1..-1], :style => pascal
 
 
       end
