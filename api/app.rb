@@ -17,7 +17,6 @@ class App < Sinatra::Application
   config_file File.join("#{Dir.pwd}/../config/rack.conf.yml")
   extend Models
 
-  DATASOURCE = load_db
   CLASS_FACTORY_OPTIONS = YAML.safe_load(File.open("#{Dir.pwd}/config/class_factory.conf.yml"))
 
   require 'requires'
@@ -65,17 +64,9 @@ class App < Sinatra::Application
   }
 
   helpers {
-    def sample_method
-      'sample method'
-    end
+
   }
 
   use Rack::PostBodyContentTypeParser
 
-
-  ClassMap = create_classes(DATASOURCE, Dynamics, CLASS_FACTORY_OPTIONS['name_conflicts'])
-  Classes = get_classes(Dynamics)
-
-  # require 'extensions/models/dynamics_common'
-  # include Extensions::DynamicsCommon
 end
